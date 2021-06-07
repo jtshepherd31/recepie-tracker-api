@@ -3,9 +3,9 @@
 API="http://localhost:4741"
 URL_PATH="/recipes"
 
-curl "${API}${URL_PATH}/${ID}" \
+curl "${API}${URL_PATH}" \
   --include \
-  --request PATCH \
+  --request POST \
   --header "Content-Type: application/json" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
@@ -14,7 +14,9 @@ curl "${API}${URL_PATH}/${ID}" \
       "ingredients": "'"${INGREDIENTS}"'",
       "instructions": "'"${INSTRUCTIONS}"'",
       "calories": "'"${CALORIES}"'",
-      "type": "'"${TYPE}"'"
+      "type": "'"${TYPE}"'",
+      "cuisine": "'"${CUISINE}"'",
+      "owner": "'"${OWNER}"'"
     }
   }'
 
