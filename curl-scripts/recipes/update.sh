@@ -14,7 +14,8 @@ curl "${API}${URL_PATH}/${ID}" \
       "ingredients": "'"${INGREDIENTS}"'",
       "instructions": "'"${INSTRUCTIONS}"'",
       "calories": "'"${CALORIES}"'",
-      "type": "'"${TYPE}"'"
+      "type": "'"${TYPE}"'",
+      "cuisine": "'"${CUISINE}"'"  
     }
   }'
 
