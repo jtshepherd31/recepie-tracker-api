@@ -25,6 +25,10 @@ const recipeSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  favorite: {
+    type: Boolean,
+    required: true
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',

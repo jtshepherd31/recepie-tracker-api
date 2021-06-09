@@ -16,6 +16,7 @@ curl "${API}${URL_PATH}" \
       "calories": "'"${CALORIES}"'",
       "type": "'"${TYPE}"'",
       "cuisine": "'"${CUISINE}"'",
+      "favorite": "'"${FAVORITE}"'",
       "owner": "'"${OWNER}"'"
     }
   }'
